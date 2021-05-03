@@ -43,7 +43,7 @@ export default {
 }
 
 .task:hover {
-  opacity: 0.75;
+  opacity: 0.8;
 }
 .task.done {
   background: green;

@@ -36,10 +36,14 @@ export default {
       this.tasks = this.tasks.map((task) =>
         task.id === id ? { ...task, done: !task.done } : task
       );
+      
+      
     },
     addTask(newTask) {
         
         this.tasks = [...this.tasks, newTask];
+        
+        
     }
   },
 
@@ -55,7 +59,7 @@ export default {
         id: 2,
         text: "Sport",
         date: "Lundi 3 mai 13h30",
-        done: false,
+        done: true,
       },
       {
         id: 3,
