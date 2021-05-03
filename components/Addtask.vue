@@ -2,11 +2,11 @@
     <form @submit="onSubmit">
         <div class="form-control">
             <label for="text" >Tâche:</label>
-            <input placeholder="Faire les courses..."  v-model="text"/>
+            <input placeholder=" Faire les courses..."  v-model="text"/>
         </div>
         <div class="form-control">
             <label for="date">Date et heure:</label>
-            <input  placeholder="Mardi 4 mai 20h..." v-model="date"/>
+            <input  placeholder=" Mardi 4 mai 20h..." v-model="date"/>
         </div>
         <div class="btnContainer">
             <Button text='Ajouter' type="submit"/>
@@ -34,7 +34,7 @@ export default {
     onSubmit(e) {
       e.preventDefault();
       if (!this.text) {
-        alert("Ajouter une tâche et une date s'il vous plaît");
+        alert("Veuillez d'abord ajouter une tâche et une date s'il vous plaît");
         return;
       }
       const newTask = {
